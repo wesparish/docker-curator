@@ -14,7 +14,7 @@ actions:
       exclude: True
     - filtertype: pattern
       kind: prefix
-      value: '^(logstash-|metricbeat-|gpu-sensors-|heartbeat-).*$'
+      value: '^(logstash-|metricbeat-|gpu-sensors-|heartbeat-|tempsensor-).*$'
     - filtertype: age
       source: name
       direction: older
