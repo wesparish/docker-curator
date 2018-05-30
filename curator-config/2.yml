@@ -14,10 +14,10 @@ actions:
       exclude: True
     - filtertype: pattern
       kind: prefix
-      value: '^(logstash-|metricbeat-|gpu-sensors-|heartbeat-).*$'
+      value: '^(tempsensor-).*$'
     - filtertype: age
       source: name
       direction: older
       timestring: '%Y.%m.%d'
       unit: days
-      unit_count: 3
+      unit_count: 60
